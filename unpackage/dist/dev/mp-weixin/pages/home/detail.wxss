@@ -1,0 +1,28 @@
+
+.main.data-v-431a10b7 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+}
+.scroll-view.data-v-431a10b7 {
+
+		width: 100%;
+		/* height: 100%; */
+		flex: 1;
+		overflow: hidden;
+
+		box-sizing: border-box;
+}
+.row.data-v-431a10b7 {
+		margin-top: 20rpx;
+		padding: 10rpx;
+}
+.card.data-v-431a10b7 {
+		/* margin: 10rpx; */
+		box-sizing: border-box;
+		padding: 20rpx;
+		width: 100%;
+		height: 200rpx;
+		background-color: white;
+		display: flex;
+}

@@ -1,0 +1,1 @@
+<view class="tabs data-v-ec5aa011" style="{{'background-color:' + b}}"><view wx:for="{{a}}" wx:for-item="tab" wx:key="b" class="{{['data-v-ec5aa011', tab.c && 'active']}}" bindtap="{{tab.d}}">{{tab.a}}</view></view>

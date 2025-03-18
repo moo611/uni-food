@@ -1,0 +1,15 @@
+
+.my-input-div.data-v-e4e4508d {
+		width: 80%;
+		margin: 20rpx auto;
+}
+.my-input.data-v-e4e4508d {
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+		height: 80rpx;
+}
+.my-btn.data-v-e4e4508d {
+		width: 80%;
+		margin: 50rpx auto;
+		height: 80rpx;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/index",
+    "pages/setting/index",
+    "pages/home/detail",
+    "pages/login/signup"
+  ],
+  "usingComponents": {
+    "tabs": "/components/tabs",
+    "nav-bar": "/components/navbar"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#C0E3FF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#646566",
+    "selectedColor": "#1989fa",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./static/tabIcon/tab_01.png",
+        "selectedIconPath": "./static/tabIcon/tab_01_on.png"
+      },
+      {
+        "pagePath": "pages/setting/index",
+        "text": "设置",
+        "iconPath": "./static/tabIcon/tab_04.png",
+        "selectedIconPath": "./static/tabIcon/tab_04_on.png"
+      }
+    ]
+  }
+}

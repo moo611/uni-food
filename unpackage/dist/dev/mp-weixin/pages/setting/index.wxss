@@ -1,0 +1,10 @@
+
+.main.data-v-861f37f2{
+		height: 100vh;
+}
+.content.data-v-861f37f2 {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		height: 100%;
+}
