@@ -10,6 +10,10 @@
 		    value: '1'
 		  },]" v-model:active="activeTab" @click-tab="tabChange"></tabs>
 		</view>
+		<view v-if="activeTab == '0'" style="display: flex;flex-direction: row;align-items: center;">
+			<uni-search-bar style="flex: 1;" placeholder="请输入名称" v-model="queryParams.name" clearButton="none" cancelButton="none"></uni-search-bar>
+			<button style="margin-right: 20rpx;" size="mini" @click="refresh()">搜索</button>
+		</view>
 		<scroll-view class="scroll-view" :scroll-y="true" @scrolltolower="loadmore">
 			<view v-for="(item, index) in state.data" :key="index" class="card" @click="goDetail(item.id)">
 
@@ -17,6 +21,7 @@
 				<view style="flex: 1;height: 100%;margin-left: 30rpx;">
 					<view style="margin: 5rpx;"><text>菜名:{{item.name}}</text></view>
 					<view style="margin: 5rpx;"><text>价格:{{item.price}}￥</text></view>
+					<view style="margin: 5rpx;"><text>评分:{{item.rating.toFixed(2)}}</text></view>
 				</view>
 
 				<!-- <view style="background-color: #f0f0f0;height: 2rpx; position: absolute; bottom: 0;width: 100%;"/> -->
@@ -39,7 +44,7 @@
 	const queryParams = reactive({
 		pageNum: 1,
 		pageSize: 10,
-
+		name:''
 	})
 	const state = reactive({
 		data: []
@@ -73,6 +78,10 @@
 			queryParams.pageNum++
 			state.data = res.list
 		})
+	}
+	
+	const onCancel=()=>{
+		console.log(queryParams.name)
 	}
 
 	const loadmore = () => {
